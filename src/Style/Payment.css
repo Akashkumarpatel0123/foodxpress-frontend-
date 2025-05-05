@@ -1,0 +1,80 @@
+.payment-container {
+	max-width: 400px;
+	margin: auto;
+	padding: 1.5rem;
+	font-family: "Segoe UI", sans-serif;
+	background-color: #fff;
+	border-radius: 16px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .heading {
+	text-align: center;
+	margin-bottom: 1.5rem;
+	font-size: 24px;
+	font-weight: 600;
+    }
+    
+    .summary h3,
+    .methods h3 {
+	font-size: 18px;
+	margin-bottom: 1rem;
+    }
+    
+    .item,
+    .total {
+	display: flex;
+	justify-content: space-between;
+	margin: 0.6rem 0;
+	font-size: 16px;
+    }
+    
+    .total {
+	font-weight: bold;
+    }
+    
+    .method-option {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+	gap: 10px;
+	font-size: 15px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	cursor: pointer;
+    }
+    
+    .method-option input {
+	transform: scale(1.2);
+    }
+    
+    .icons {
+	margin-left: auto;
+	display: flex;
+	gap: 8px;
+    }
+    
+    .icons img {
+	height: 24px;
+	width: auto;
+    }
+    
+    .pay-btn {
+	background-color: #00a859;
+	color: white;
+	border: none;
+	padding: 1rem;
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-top: 1.5rem;
+	transition: background 0.3s ease;
+    }
+    
+    .pay-btn:hover {
+	background-color: #007f47;
+    }
+    

@@ -1,0 +1,286 @@
+/* General layout */
+.home {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: 16px;
+	background-color: #fff;
+	color: #333;
+	overflow-x: hidden;
+}
+
+/* Header */
+.home-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+.location, .profile {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.location strong {
+	margin-left: 2px;
+	color: #e74c3c;
+}
+
+.profile-icon {
+	font-size: 18px;
+	color: #555;
+}
+
+/* Search bar */
+.search-bar {
+	margin: 16px 0;
+}
+
+.search-bar input {
+	width: 100%;
+	padding: 10px 14px;
+	font-size: 14px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	outline: none;
+	box-shadow: 0 0 4px rgba(0,0,0,0.04);
+}
+
+/* Categories */
+h2 {
+	margin: 20px 0 10px;
+	font-size: 18px;
+}
+
+.categories {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.category {
+	width: 72px;
+	text-align: center;
+}
+
+.category img {
+	width: 72px;
+	height: 72px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 2px solid #f1f1f1;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.category p {
+	margin-top: 6px;
+	font-size: 12px;
+}
+
+/* Offers */
+.offers {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 14px;
+}
+
+.offer-card {
+	background: #fef2f2;
+	padding: 12px;
+	border-radius: 10px;
+	border: 1px dashed #e74c3c;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.offer-card p {
+	margin: 0;
+	font-size: 13px;
+	color: #e74c3c;
+}
+
+.offer-card strong {
+	font-size: 14px;
+}
+
+/* Restaurants */
+.restaurants {
+	display: flex;
+	overflow-x: auto;
+	gap: 12px;
+	margin-top: 14px;
+	padding-bottom: 8px;
+}
+
+.restaurant-card {
+	position: relative;
+	min-width: 130px;
+	height: 90px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 3px 8px rgba(0,0,0,0.04);
+	flex-shrink: 0;
+}
+
+.restaurant-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.restaurant-card .time {
+	position: absolute;
+	bottom: 6px;
+	right: 6px;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 3px 6px;
+	border-radius: 5px;
+	font-size: 11px;
+}
+
+/* Sidebar */
+.sidebar {
+	position: fixed;
+	top: 0;
+	right: -280px;
+	width: 260px;
+	height: 100%;
+	background: #fff;
+	box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	transition: right 0.3s ease-in-out;
+	z-index: 1000;
+}
+
+.sidebar.open {
+	right: 0;
+}
+
+.sidebar .close-btn {
+	background: transparent;
+	border: none;
+	font-size: 22px;
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 40px;
+}
+
+.sidebar ul li {
+	margin: 15px 0;
+	font-size: 16px;
+	font-weight: 500;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.join-tag {
+	font-size: 12px;
+	color: #ff4d4f;
+	font-weight: 600;
+}
+
+/* Toggle Switch */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 42px;
+	height: 24px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider.round {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	border-radius: 34px;
+	transition: 0.4s;
+}
+
+.slider.round:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 3px;
+	bottom: 3px;
+	background-color: white;
+	border-radius: 50%;
+	transition: 0.4s;
+}
+
+input:checked + .slider.round {
+	background-color: #4caf50;
+}
+
+input:checked + .slider.round:before {
+	transform: translateX(18px);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+	.offers {
+		flex-direction: row;
+	}
+
+	.restaurant-card {
+		min-width: 160px;
+		height: 100px;
+	}
+
+	.category {
+		width: 90px;
+	}
+
+	.category img {
+		width: 90px;
+		height: 90px;
+	}
+}
+.cart {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #e74c3c;
+	color: white;
+	padding: 12px ;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .cart:hover {
+	background-color: #c0392b;
+    }
+    
+    .cart-icon {
+	font-size: 20px;
+    }
+    
+    .cart-text {
+	font-size: 10px;
+	font-weight: bold;
+    }

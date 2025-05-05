@@ -1,0 +1,29 @@
+/* src/Style/SplashScreen.css */
+.splash-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #13d966;
+	color: white;
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: center;
+	flex-direction: column;
+    }
+    
+    .company-name {
+	font-size: 50px;
+	animation: fadeIn 3s ease-in-out;
+    }
+    
+    /* Animation */
+    @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+    }
+    

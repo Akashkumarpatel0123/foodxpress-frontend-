@@ -1,0 +1,136 @@
+/* Main container */
+.rating-container {
+	padding: 24px 24px 40px;
+	background-color: #ffffff;
+	min-height: 100vh;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	position: relative;
+}
+
+/* Top-right Cancel button */
+.cancel-btn-container {
+	text-align: right;
+	margin-bottom: 16px;
+}
+
+.cancel-button {
+	background: none;
+	border: none;
+	color: #f44336;
+	font-size: 14px;
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: 500;
+	transition: color 0.3s;
+}
+
+.cancel-button:hover {
+	color: #c53030;
+}
+
+/* Title */
+.rating-title {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 16px;
+	color: #111827;
+}
+
+/* Description text */
+.rating-description {
+	color: #4b5563;
+	margin-bottom: 24px;
+	line-height: 1.6;
+	font-size: 14px;
+}
+
+/* Rating sections (wait time, courtesy, generosity) */
+.rating-section {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	margin-bottom: 24px;
+}
+
+.rating-section img {
+	width: 64px;
+	height: 64px;
+	object-fit: contain;
+}
+
+.rating-section h2 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 4px;
+	color: #1f2937;
+}
+
+.rating-section p {
+	color: #6b7280;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+/* Rating calculation explanation */
+.rating-calc {
+	margin-top: 40px;
+}
+
+.rating-calc h2 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 8px;
+	color: #111827;
+}
+
+.rating-calc p {
+	color: #4b5563;
+	line-height: 1.6;
+	margin-bottom: 8px;
+	font-size: 14px;
+}
+
+/* Button section */
+.rating-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-top: 32px;
+}
+
+/* Unified button base styles */
+.okay-button,
+.cancel-button {
+	padding: 12px 24px;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	border-radius: 8px;
+	font-size: 14px;
+	transition: background 0.3s;
+}
+
+/* Okay button */
+.okay-button {
+	background-color: #4caf50;
+	color: white;
+}
+
+.okay-button:hover {
+	background-color: #388e3c;
+}
+
+/* Full width version for mobile or single use */
+.okay-button.full-width {
+	width: 100%;
+}
+
+/* Cancel (used below if needed again in future in other places) */
+.cancel-button.filled {
+	background-color: #f44336;
+	color: white;
+}
+
+.cancel-button.filled:hover {
+	background-color: #d32f2f;
+}

@@ -1,0 +1,304 @@
+/* General Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    /* Container */
+    .login-container {
+	display: flex;
+	height: 100vh;
+    }
+    
+    /* Left Panel (Login Form) */
+    .left-panel {
+	flex: 1;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	position: relative;
+    }
+    
+    /* Header Styling */
+    .left-panel h1 {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 5px;
+    }
+    
+    .left-panel p {
+	font-size: 14px;
+	color: #777;
+	margin-bottom: 20px;
+    }
+    
+    /* Tabs for Login/Register */
+    .tab-container {
+	display: flex;
+	margin-bottom: 20px;
+    }
+    
+    .tab {
+	padding: 10px 20px;
+	border: none;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	font-size: 16px;
+	margin-right: 10px;
+	border-radius: 6px 6px 0 0;
+	transition: background 0.3s;
+    }
+    
+    .tab.active {
+	background-color: #fff;
+	border-bottom: 2px solid #e0e0e0;
+	font-weight: bold;
+    }
+    
+    /* Form Container Styling */
+    .form-container {
+	background-color: #f9f9f9;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .form-container h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+    }
+    
+    .form-container p {
+	color: #888;
+	margin-bottom: 20px;
+    }
+    
+    .form-container input {
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	font-size: 14px;
+    }
+    
+    /* Password Input Styling */
+    .password-input {
+	position: relative;
+    }
+    
+    .password-input input {
+	padding-right: 40px;
+    }
+    
+    .toggle-password {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	color: #888;
+    }
+    
+    /* User Type Dropdown Styling */
+    .user-type-container {
+	margin-bottom: 15px;
+    }
+    
+    .user-type-container select {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	font-size: 14px;
+	background-color: #fff;
+	color: #333;
+	appearance: none;
+	cursor: pointer;
+	margin-bottom: 15px;
+    }
+    
+    .user-type-container select:focus {
+	border-color: #f6475f;
+	outline: none;
+    }
+    
+    /* Remember Me Styling */
+    .remember-me {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	color: #555;
+	margin-bottom: 15px;
+	gap: 8px;
+	user-select: none;
+    }
+    
+    .remember-me input[type="checkbox"] {
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+    }
+    
+    /* Login Button Styling */
+    .login-btn {
+	width: 100%;
+	padding: 12px;
+	background-color: #f6475f;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background 0.3s;
+    }
+    
+    .login-btn:hover {
+	background-color: #e03e53;
+    }
+    
+    /* Register Link Styling */
+    .register-link {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 14px;
+    }
+    
+    .register-link a {
+	color: #f6475f;
+	text-decoration: none;
+    }
+    
+    /* Social Login Button Styling */
+    .social-login {
+	text-align: center;
+	margin-top: 20px;
+    }
+    
+    .social-login p {
+	margin-bottom: 10px;
+	color: #666;
+	font-size: 14px;
+    }
+    
+    .google-btn,
+    .linkedin-btn {
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 6px;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+	transition: background 0.3s;
+    }
+    
+    .google-btn {
+	background-color: #db4437;
+    }
+    
+    .google-btn:hover {
+	background-color: #c1352b;
+    }
+    
+    
+    /* Right Panel (Info Section) */
+    .right-panel {
+	flex: 1;
+	background: linear-gradient(135deg, #ff4e50, #f6475f);
+	color: white;
+	padding: 60px 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    }
+    
+    .right-panel h1 {
+	font-size: 32px;
+	margin-bottom: 20px;
+    }
+    
+    .right-panel p {
+	font-size: 16px;
+	margin-bottom: 20px;
+    }
+    
+    .right-panel ul {
+	list-style: none;
+    }
+    
+    .right-panel ul li::before {
+	content: "●";
+	color: white;
+	margin-right: 10px;
+    }
+    
+    .right-panel ul li {
+	margin-bottom: 10px;
+	font-size: 15px;
+    }
+    
+    /* Skip Button Styling */
+    .skip-btn-container {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+    }
+    
+    .skip-btn {
+	background-color: transparent;
+	color: #f6475f;
+	font-weight: bold;
+	text-decoration: none;
+	border: 2px solid #f6475f;
+	padding: 6px 14px;
+	border-radius: 6px;
+	transition: all 0.3s;
+    }
+    
+    .skip-btn:hover {
+	background-color: #f6475f;
+	color: white;
+    }
+    
+    /* Modified Skip Button Styling for Mobile View */
+    .skip-btn-container {
+	position: absolute;
+	top: 16px;
+	right: 24px;
+	z-index: 1000;
+    }
+    
+    .skip-btn {
+	background-color: #ef4444;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .skip-btn:hover {
+	background-color: #dc2626;
+    }
+    .toggle-password {
+	background: none;
+	border: none;
+	font-size: 1.5rem; /* Adjust the size as needed */
+	padding: 0;
+	display: inline-block;
+	position: absolute;
+	right: -40px;
+
+	transform: translateY(-60%);
+    }
+  
